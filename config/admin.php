@@ -85,7 +85,7 @@ return [
     | Html title for all pages.
     |
     */
-    'title' => 'QAQ',
+    'title' => '后台管理',
 
     /*
     |--------------------------------------------------------------------------
@@ -249,7 +249,7 @@ return [
     | Set a default avatar for newly created users.
     |
     */
-    'default_avatar' => '/assets/images/admin-avatar.jpg',
+    'default_avatar' => '/assets/images/admin-avatar.png',
 
     /*
     |--------------------------------------------------------------------------
@@ -299,7 +299,7 @@ return [
     | This value is used to set the background image of login page.
     |
     */
-    'login_background_image' => '/assets/images/admin-background.png',
+    'login_background_image' => '',
 
     /*
     |--------------------------------------------------------------------------
