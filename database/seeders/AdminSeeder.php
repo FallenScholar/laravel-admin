@@ -137,7 +137,7 @@ class AdminSeeder extends Seeder
             [
                 'parent_id' => 0,
                 'order' => 1,
-                'title' => 'Dashboard',
+                'title' => '控制台',
                 'icon' => 'fa-bar-chart',
                 'uri' => '/',
                 'permission' => '',
@@ -146,8 +146,8 @@ class AdminSeeder extends Seeder
             ],
             [
                 'parent_id' => 0,
-                'order' => 2,
-                'title' => 'Admin',
+                'order' => 14,
+                'title' => '系统管理',
                 'icon' => 'fa-tasks',
                 'uri' => '',
                 'permission' => '',
@@ -156,8 +156,8 @@ class AdminSeeder extends Seeder
             ],
             [
                 'parent_id' => 2,
-                'order' => 3,
-                'title' => 'Users',
+                'order' => 16,
+                'title' => '管理员',
                 'icon' => 'fa-users',
                 'uri' => 'auth/users',
                 'permission' => '',
@@ -166,8 +166,8 @@ class AdminSeeder extends Seeder
             ],
             [
                 'parent_id' => 2,
-                'order' => 4,
-                'title' => 'Roles',
+                'order' => 17,
+                'title' => '权限组',
                 'icon' => 'fa-user',
                 'uri' => 'auth/roles',
                 'permission' => '',
@@ -176,8 +176,8 @@ class AdminSeeder extends Seeder
             ],
             [
                 'parent_id' => 2,
-                'order' => 5,
-                'title' => 'Permission',
+                'order' => 18,
+                'title' => '权限',
                 'icon' => 'fa-ban',
                 'uri' => 'auth/permissions',
                 'permission' => '',
@@ -186,8 +186,8 @@ class AdminSeeder extends Seeder
             ],
             [
                 'parent_id' => 2,
-                'order' => 6,
-                'title' => 'Menu',
+                'order' => 19,
+                'title' => '菜单',
                 'icon' => 'fa-bars',
                 'uri' => 'auth/menu',
                 'permission' => '',
@@ -196,10 +196,30 @@ class AdminSeeder extends Seeder
             ],
             [
                 'parent_id' => 2,
-                'order' => 7,
-                'title' => 'Operation log',
+                'order' => 20,
+                'title' => '操作日志',
                 'icon' => 'fa-history',
                 'uri' => 'auth/logs',
+                'permission' => '',
+                'created_at' => $this->time,
+                'updated_at' => $this->time
+            ],
+            [
+                'parent_id' => 2,
+                'order' => 15,
+                'title' => '系统配置',
+                'icon' => 'fa-cogs',
+                'uri' => 'configs',
+                'permission' => '',
+                'created_at' => $this->time,
+                'updated_at' => $this->time
+            ],
+            [
+                'parent_id' => 0,
+                'order' => 13,
+                'title' => '配置管理',
+                'icon' => 'fa-cog',
+                'uri' => 'config',
                 'permission' => '',
                 'created_at' => $this->time,
                 'updated_at' => $this->time

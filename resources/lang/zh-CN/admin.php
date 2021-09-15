@@ -103,4 +103,10 @@ return [
     'prev'                   => '上一步',
     'next'                   => '下一步',
     'quick_create'           => '快速创建',
+    'dashboard' => '仪表盘',
+    'page_title' => [
+        'dashboard' => '数据信息',
+        'user' => '用户管理',
+        'config' => '配置管理',
+    ]
 ];
