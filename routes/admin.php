@@ -5,6 +5,11 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('admin.home');
 
+Route::get('config', 'Config\FormController@index'); // 数据表单 配置管理
+Route::resource('configs', 'ConfigController')
+    ->except(['show'])
+    ->names('config'); // 配置管理
+
 /** ====== Laravel-admin 用户鉴权登陆注册 ======   */
 Route::get('auth/login', 'AuthController@getLogin')->name('admin.login');
 Route::post('auth/login', 'AuthController@postLogin');
